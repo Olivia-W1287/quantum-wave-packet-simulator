@@ -27,38 +27,19 @@ The long-term aim is to simulate the time-dependent Schrödinger equation for Ga
 
 The project uses the one-dimensional Hamiltonian
 
-$$
-\hat{H}
-=
--\frac{\hbar^2}{2m}\frac{d^2}{dx^2}
-+
-V(x).
-$$
+$$ \hat{H} = -\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x).$$
 
 The second derivative is approximated using the central-difference expression
 
-$$
-\psi''(x_i)
-\approx
-\frac{\psi_{i+1}-2\psi_i+\psi_{i-1}}{(\Delta x)^2}.
-$$
+$$\psi''(x_i) \approx\frac{\psi_{i+1}-2\psi_i+\psi_{i-1}}{(\Delta x)^2}.$$
 
 For the infinite square well, the numerical solutions are validated against the analytical energies
 
-$$
-E_n
-=
-\frac{n^2\pi^2\hbar^2}{2mL^2}
-$$
+$$E_n = \frac{n^2\pi^2\hbar^2}{2mL^2}$$
 
 and eigenfunctions
 
-$$
-\psi_n(x)
-=
-\sqrt{\frac{2}{L}}
-\sin\left(\frac{n\pi x}{L}\right).
-$$
+$$\psi_n(x) = \sqrt{\frac{2}{L}} \sin\left(\frac{n\pi x}{L}\right).$$
 
 ## Repository contents
 
